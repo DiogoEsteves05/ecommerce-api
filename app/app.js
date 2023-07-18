@@ -12,7 +12,7 @@ import productsRouter from "../routes/ProductsRoute.js";
 import reviewRouter from "../routes/ReviewRoute.js";
 import userRouter from "../routes/UserRoute.js";
 import couponsRouter from "../routes/CouponsRoute.js";
-import Order from "../model/OrderModel";
+import Order from "../model/OrderModel.js";
 
 //connection to the db
 dbConnect();
