@@ -69,7 +69,7 @@ export const loginUser = asyncHandler(async (req, res) => {
 // @desc    Get user profile
 // @route   GET /api/users/profile
 // @access  Private
-export const getUserProfileCtrl = asyncHandler(async (req, res) => {
+export const getUserProfile = asyncHandler(async (req, res) => {
   // procura o utilizador
   const user = await User.findById(req.userAuthId).populate("orders");
   res.json({
